@@ -65,12 +65,12 @@
 		height: 100vh;
 		width: 100vw;
 	}
-	h1{
+	.clock h1{
 		font-size: 10rem;
 		font-weight: 500;
 		margin: 0px
 	}
-	p {
+	.clock p {
 		margin: 0px;
 	}
 	.clock {
