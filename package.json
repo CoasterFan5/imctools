@@ -24,6 +24,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltejs/adapter-node": "^1.2.0"
+		"@sveltejs/adapter-node": "^1.2.0",
+		"cross-env": "^7.0.3"
 	}
 }
