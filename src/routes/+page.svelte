@@ -1,3 +1,1 @@
-<h1>
-	IMC Tools
-</h1>
+<h1>IMC Tools</h1>
