@@ -17,12 +17,13 @@
 		enchantLevel = enchants[selected].startLevel;
 		desiredLevel = enchants[selected].maxLevel;
 	}
-	$: totalCost = `Total: ${formatNumber(calculateEnchantPrice(selected, enchantLevel, desiredLevel))}`
+	$: totalCost = `${formatNumber(calculateEnchantPrice(selected, enchantLevel, desiredLevel))} Tokens`
 
 </script>
 
 <h1>Enchant Calculator</h1>
 <div class="selections">
+	<p>Enchant</p>
 	<select bind:value={selected}>
 		<option value="0">Select an Enchant</option>
 		{#each items as item}
@@ -30,10 +31,20 @@
 		{/each}
 	</select>
 	{#if selected != 0}
+		<p>Level</p>
 		<input placeholder="Enter Level" bind:value={enchantLevel}/>
+		<p>Desired Level</p>
 		<input placeholder="Enter Desired Level" bind:value={desiredLevel}/>
+		<p>Total Cost</p>
 		<input class="disabled" placeholder="Total Cost" disabled bind:value={totalCost} />
 	{/if}
+
+	<h3>
+		WARNING!
+	</h3>
+	<h4>
+		Ongoing bug causes max enchanting by pressing "Q" to charge more than it should.
+	</h4>
 	
 </div>
 
@@ -45,6 +56,11 @@
 		width: 100%;
 		max-width: 300px;
 	}
+	.selections p {
+		margin: 0px;
+		width: 100%;
+		text-align: left;
+	}
 	.selections select {
 		width: 100%;
 		height: 30px;
@@ -55,6 +71,7 @@
 		transition: ease-in-out 0.2s;
 		color: black;
 		outline: 1px solid white;
+		margin-bottom: 10px;
 	}
 	.selections select:hover {
 		color: black;
@@ -68,7 +85,7 @@
 		width: 100%;
 		height: 30px;
 		font-size: 1.2rem;
-		margin-top: 10px;
+		margin-bottom: 10px;
 		padding: 0px;
 		text-align: center;
 		border: 0px;
@@ -91,6 +108,19 @@
 	}
 	.selections input.disabled:hover {
 		outline: 1px solid rgba(255, 255, 255, 0.5);;
+	}
+
+	h3 {
+		margin: 0px;
+		font-size: 1.5rem;
+		color: black;
+		margin-top: 20px;
+	}
+	h4 {
+		margin: 0px;
+		text-align: center;
+		font-size: 1.2rem;
+		color: black
 	}
 	
 </style>
