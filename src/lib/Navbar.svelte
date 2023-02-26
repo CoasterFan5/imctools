@@ -7,6 +7,7 @@
 			<a href="/enchants">Enchant Calculator</a>
 			<a href="/prestiges">Prestige Calculator</a>
 			<a href="/dp">DP Countdown</a>
+			<a href="https://github.com/CoasterFan5/imctools">Source Code</a>
 		</div>
 	</div>
 </div>
