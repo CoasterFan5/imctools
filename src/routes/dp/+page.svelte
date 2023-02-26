@@ -32,6 +32,7 @@
 	$: displaySeconds = Math.floor(secsToDp) - displayMinutes * 60 - displayHours * 60 * 60;
 </script>
 
+<title>Drop Party Coundown</title>
 <div class="wrap">
 	<div class="clock">
 		<div class="clockSection">

@@ -1,3 +1,5 @@
+<title>Prestige Calculator</title>
+
 <h1 class="pagetitle">Coming Soon</h1>
 <p>Blame Brock</p>
 

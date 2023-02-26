@@ -2,11 +2,13 @@
 	import Navbar from '$lib/Navbar.svelte';
 </script>
 
+
 <meta content="InfernalMC Prison Tools" property="og:title" />
 <meta
 	content="Calculate enchantment cost, view the drop party countdown, and more!"
 	property="og:description"
 />
+<meta content='/favicon.png' property='og:image'>
 <meta content="IMCtools" property="og:site_name" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />

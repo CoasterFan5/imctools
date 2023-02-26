@@ -21,6 +21,8 @@
 	)} Tokens`;
 </script>
 
+
+<title> Enchant Calculator </title>
 <h1>Enchant Calculator</h1>
 <div class="selections">
 	<p>Enchant</p>
