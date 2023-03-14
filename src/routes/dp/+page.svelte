@@ -1,5 +1,5 @@
 <script>
-	let dpSeconds = 77400000;
+	let dpSeconds = 77400000 - 3600000;
 	let time = Date.now();
 	console.log(time / 86400000);
 
