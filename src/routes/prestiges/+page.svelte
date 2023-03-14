@@ -6,7 +6,7 @@
 	let nextPrestigeCost = 400_000_000_000;
 	let totalCost = 400_000_000_000;
 	$: nextPrestigeCost = Math.floor(400_000_000_000 * (1.00025 ** level));
-	$: totalCost = calculateTotalCost(level, target)
+	$: totalCost = calculateTotalCost(parseInt(level), parseInt(target))
 
 	let calculateTotalCost = (level, target) => {
 		let sum = 0;
@@ -35,5 +35,19 @@
 	p {
 		margin: 0px;
 		font-size: 1.5rem;
+	}
+	input {
+		width: 100%;
+		margin: 20px;
+		background-color: transparent;
+		backdrop-filter: blur(10px);
+		border: 1px solid #000;
+		outline: 0px;
+		border-radius: 5px;
+		padding: 20px;
+		box-sizing: border-box;
+		max-width: 300px;
+		height: 30px;
+		font-size: 1.2rem;
 	}
 </style>
