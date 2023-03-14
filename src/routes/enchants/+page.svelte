@@ -40,9 +40,6 @@
 		<p>Total Cost</p>
 		<input class="disabled" placeholder="Total Cost" disabled bind:value={totalCost} />
 	{/if}
-
-	<h3>WARNING!</h3>
-	<h4>Ongoing bug causes max enchanting by pressing "Q" to charge more than it should.</h4>
 </div>
 
 <style>
