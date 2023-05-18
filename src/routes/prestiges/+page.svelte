@@ -27,6 +27,7 @@
 
 <p>Next Prestige Cost: {formatNumber(nextPrestigeCost)}</p>
 <p>Total Cost: {formatNumber(totalCost)}</p>
+<p>~ {Math.ceil(totalCost/144_000_000_000_000 * 100)/100} hours of auto mining</p>
 
 <style>
 	.pagetitle {

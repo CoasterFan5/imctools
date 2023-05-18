@@ -1,5 +1,5 @@
 export let formatNumber = (num, sigfigs = 3) => {
-	let formatNotation = ['', 'K', 'M', 'B', 'T', 'Q'];
+	let formatNotation = ['', 'K', 'M', 'B', 'T', 'Q', 'KQ', "MQ", "BQ", "TQ", "QQ"];
 
 	if (!num) {
 		return 0;
